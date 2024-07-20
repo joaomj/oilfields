@@ -2,9 +2,17 @@
 Repo para o desafio de Data Science com poços de petróleo.
 
 # **O Problema**
+A Acme Oil, empresa de especializada em extração de petróleo, decidiu iniar um projeto de análise de dados para obter informações que os auxiliem na tomada de decisões estratégicas.
 
+Foi atribuído a você o desenvolvimento de um modelo de correlações de poços. Este consiste em encontrar poços correlatos, ou seja, poços que tenham características semelhantes.
+
+Será fornecido a você um conjunto de dados de um poço de petróleo ("valor de entrada"). Você deve informar uma lista com os poços mais semelhantes ao informado. Desenvolva um modelo treinado nos dados fornecidos que retorne uma lista com os 04 poços mais semelhantes ao poço do valor de entrada.
 
 # **Solução**
+Lendo o enunciado, percebe-se que este trata de um problema de **clusterização**, isto é, de agrupamento de itens semelhantes. É muito importante conhecer o tipo de problema antes de começar a programar, pois este reconhecimento vai determinar quais algoritmos de Machine Learning serão usados (e como o dataset será preparado).
+
+De modo geral, a solução do problema seguiu as seguintes etapas:
+
 1. Carregar dados
 2. Limpar dados
 3. Tratar dados: desbalanceamento, valores nulos, colunas sem variância
