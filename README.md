@@ -27,6 +27,32 @@ De modo geral, a solução do problema seguiu as seguintes etapas:
 6. Gravar Modelo Escolhido
 
 # **Resultados**
+Os 04 poços mais semelhantes ao poço informado são:
+
+| nome_do_poco | score_similaridade | ranking_similaridade |
+|--------------|---------------------|----------------------|
+| 6C5G4M       | 1.00                | 1                    |
+| 7021KS       | 0.97                | 2                    |
+| 553PEG       | 0.95                | 3                    |
+| 4BVJOY       | 0.94                | 4                    |
+
+Os 04 poços mais semelhantes segundo o **modelo KNN**: (precision@K = 25%)
+
+| nome_do_poco | similaridade_knn | ranking_similaridade | score_similaridade |
+|--------------|-------------------|----------------------|---------------------|
+| 6C5G4M       | 1.0000            | 1                    | 1.0000              |
+| 091G7D       | 0.6694            | 9                    | 0.9311              |
+| E6Q0PD       | 0.6563            | 11                   | 0.9042              |
+| 0WFQ56       | 0.6346            | 7                    | 0.9394              |
+
+Poços mais semelhantes ao poço informado, segundo **Similaridade do Cosseno**: (precision@K = 50%)
+
+| nome_do_poco | similaridade_cosseno | ranking_similaridade | score_similaridade |
+|--------------|-----------------------|----------------------|---------------------|
+| 6C5G4M       | 1.0000                | 1                    | 1.0000              |
+| 091G7D       | 0.9919                | 9                    | 0.9311              |
+| 4BVJOY       | 0.9878                | 4                    | 0.9450              |
+| 0WFQ56       | 0.9874                | 7                    | 0.9394              |
 
 
 # **Para reproduzir a solução**
